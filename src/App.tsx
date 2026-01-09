@@ -1,7 +1,12 @@
-import "./App.css";
+import Posts from "./components/Posts";
+import "./css/App.css";
 
 function App() {
-  return <>coucou</>;
+  return (
+    <>
+      <Posts />
+    </>
+  );
 }
 
 export default App;
