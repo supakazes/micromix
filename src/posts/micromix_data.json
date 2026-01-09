@@ -28,6 +28,7 @@
         "trackname": "Parrallèle"
       }
     ],
+
     "post_tags": ["Alan Braxe", "Donna Summer", "Feadz", "Ideal J", "Oxmo Puccino", "Zebo"],
     "imagePost": "/upload/micromix002.jpg",
     "enclosure": "http://www.micromix.fr/upload/Micromix 002 - Ghetto 2008.mp3"
@@ -57,21 +58,11 @@
         "trackname": "Know How Theme"
       },
       {
-        "artist": "Herve",
-        "trackname": ""
+        "artist": "Herve & A-trak feat Cadence Weapon",
+        "trackname": "Roll with the winners"
       }
     ],
-    "post_tags": [
-      "A-Trak",
-      "Aaron Lacrate",
-      "Armand Van Helden",
-      "Cadence Weapon",
-      "FannyPack",
-      "GRUM",
-      "Herve",
-      "Tag team",
-      "Young MC"
-    ],
+
     "imagePost": "/upload/micromix003.jpg",
     "enclosure": "http://www.micromix.fr/upload/Micromix 003 - chose ronde ou la femme s'assoit.mp3"
   },
@@ -85,25 +76,26 @@
     "tracklist": [
       {
         "artist": "Acapulco 44",
-        "trackname": ""
+        "trackname": "Pictures (Rafale remix)"
       },
       {
         "artist": "Bag Raiders",
-        "trackname": ""
+        "trackname": "Shooting Stars"
       },
       {
         "artist": "Chemical Brothers",
-        "trackname": ""
+        "trackname": "Star Guitar"
       },
       {
         "artist": "Deep Dish",
-        "trackname": ""
+        "trackname": "Say Hello"
       },
       {
         "artist": "Dari",
-        "trackname": ""
+        "trackname": "Tutto Regolare"
       }
     ],
+
     "post_tags": ["Acapulco 44", "Bag Raiders", "Chemical Brothers", "Dari", "Deep Dish", "Rafale"],
     "imagePost": "/upload/micromix004.jpg",
     "enclosure": "http://www.micromix.fr/upload/Micromix 004 - Paye Ta Guitare.mp3"
