@@ -15,9 +15,9 @@ const Posts = () => {
           key={index}
           style={{ marginBottom: "2rem", padding: "1rem", border: "1px solid #ddd" }}
         >
-          <h2>
+          <h3>
             {post.number} - {post.title}
-          </h2>
+          </h3>
           <p>
             <strong>Mixed by:</strong> {post.creator}
           </p>
