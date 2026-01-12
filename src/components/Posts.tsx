@@ -1,6 +1,13 @@
+import { useState } from "react";
 import postsData from "../data/posts.json";
 
 const Posts = () => {
+  const [audioErrors, setAudioErrors] = useState<Set<number>>(new Set());
+
+  const handleAudioError = (index: number) => {
+    setAudioErrors((prev) => new Set(prev).add(index));
+  };
+
   return (
     <div>
       <h1>Micromix Posts</h1>
@@ -28,11 +35,22 @@ const Posts = () => {
             />
           )}
 
-          {post.enclosure && (
-            <audio controls style={{ width: "100%", marginTop: "1rem" }}>
-              <source src={post.enclosure} type="audio/mpeg" />
+          {!audioErrors.has(index) ? (
+            <audio
+              controls
+              style={{ width: "100%", marginTop: "1rem" }}
+              onError={() => handleAudioError(index)}
+            >
+              <source
+                src={`/audio/Micromix%20${post.number}%20-%20${encodeURIComponent(post.title)}.mp3`}
+                type="audio/mpeg"
+              />
               Your browser does not support the audio element.
             </audio>
+          ) : (
+            <p style={{ marginTop: "1rem", color: "#666", fontStyle: "italic" }}>
+              Audio file not available
+            </p>
           )}
 
           {post.tracklist && post.tracklist.length > 0 && (
