@@ -10,7 +10,6 @@ const Posts = () => {
 
   return (
     <div>
-      <h1>Micromix Posts</h1>
       {postsData.map((post, index) => (
         <article
           key={index}
