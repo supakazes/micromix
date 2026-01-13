@@ -1,7 +1,27 @@
-import { useState } from "react";
+import { useState, useMemo } from "react";
 import postsData from "../data/posts.json";
 
+// Import all images from public/images directory
+const imageModules = import.meta.glob("/public/images/*{jpg,jpeg,png,gif}", {
+  eager: true,
+  as: "url",
+});
+
+console.log("imageModules:", imageModules);
+
 const Posts = () => {
+  // Create a map of posts numbers to images URLs
+  const imageMap = useMemo(() => {
+    const map: Record<string, string> = {};
+    Object.entries(imageModules).forEach(([path, url]) => {
+      // Extract the number from the filename (e.g., "002" from "/public/images/002.jpg")
+      const match = path.match(/\/(\d+)\.\w+$/);
+      if (match) {
+        map[match[1]] = url as string;
+      }
+    });
+    return map;
+  }, []);
   const [audioErrors, setAudioErrors] = useState<Set<number>>(new Set());
 
   const handleAudioError = (index: number) => {
@@ -25,9 +45,9 @@ const Posts = () => {
             <strong>Published:</strong> {new Date(post.pubDate).toLocaleDateString()}
           </p>
 
-          {post.imagePost && (
+          {imageMap[post.number] && (
             <img
-              src={post.imagePost}
+              src={imageMap[post.number]}
               alt={post.title}
               style={{ maxWidth: "300px", height: "auto" }}
               loading="lazy"
