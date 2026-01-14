@@ -1135,7 +1135,7 @@
       },
       {
         "artist": "Lady Gaga",
-        "trackname": "Bad Romance (Grum Remix)"
+        "trackname": "Bad Romance (GRUM Remix)"
       },
       {
         "artist": "Radiohead",
@@ -1314,7 +1314,7 @@
     "pubDate": "2010-07-08T10:51:55+00:00",
     "tracklist": [
       {
-        "artist": "Yuksek  feat. Amanda Blank",
+        "artist": "Yuksek feat. Amanda Blank",
         "trackname": "Extraball"
       },
       {
@@ -1586,10 +1586,6 @@
         "trackname": "Boogie Breeze (Honom Remix)"
       },
       {
-        "artist": "Max Cooper",
-        "trackname": "The End Of Reason (Original mix)"
-      },
-      {
         "artist": "Pierce",
         "trackname": "Something To Finish"
       }
@@ -1762,16 +1758,8 @@
         "trackname": "Je me souviens (Paul remix)"
       },
       {
-        "artist": "Capsule",
-        "trackname": "I Wish You (Cosmonaut Grechko Bootleg)"
-      },
-      {
         "artist": "Cosmonaut Grechko",
         "trackname": "All The Time We Were In Love"
-      },
-      {
-        "artist": "Tangerine Dream",
-        "trackname": "Love on a Real Train (Symbolone remix)"
       },
       {
         "artist": "Teengirl Fantasy",
@@ -2082,6 +2070,10 @@
         "trackname": "NEoN"
       },
       {
+        "artist": "Tev95",
+        "trackname": "Shoot Em Up"
+      },
+      {
         "artist": "ZEN-LA-ROCK",
         "trackname": "Midnight Delivery (feat. Punpee & BTB)"
       },
@@ -2235,7 +2227,7 @@
     "tracklist": [
       {
         "artist": "International Pony",
-        "trackname": "Our House (Mama Version Edit)"
+        "trackname": "Our House (mama version)"
       },
       {
         "artist": "Rocko Schamoni",
@@ -2315,7 +2307,7 @@
       },
       {
         "artist": "Billy Ocean",
-        "trackname": "European Queen (Rayko edit)"
+        "trackname": "European Queen (Rayko Edit)"
       },
       {
         "artist": "Alvin Baxter",
@@ -2879,7 +2871,7 @@
       },
       {
         "artist": "Dragonette",
-        "trackname": "Let it Go  (The Knocks Remix)"
+        "trackname": "Let it Go (The Knocks Remix)"
       }
     ]
   },
@@ -3052,6 +3044,10 @@
       {
         "artist": "Kris Menace Presents Stars On 33",
         "trackname": "Something You Can Feel (Reverso 68 Remix)"
+      },
+      {
+        "artist": "Tabi Bonney",
+        "trackname": "Nuthin But a Hero"
       },
       {
         "artist": "Air Zaïre",
@@ -3463,7 +3459,6 @@
       }
     ]
   },
-
   {
     "title": "Tranche épaisse",
     "number": "098",
