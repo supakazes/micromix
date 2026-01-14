@@ -1126,8 +1126,16 @@
         "trackname": "Back To Life (Monsieur Adi Remix)"
       },
       {
+        "artist": "Relation",
+        "trackname": "Your Tiny Mind (Lifelike Remix)"
+      },
+      {
         "artist": "Fear of Tigers",
         "trackname": "The Adventures of Pippi Longstrump (Diamond Cut Remix)"
+      },
+      {
+        "artist": "Lady Gaga",
+        "trackname": "Bad Romance (GRUM Remix)"
       },
       {
         "artist": "Radiohead",
@@ -1208,6 +1216,10 @@
       {
         "artist": "Sebastian Cariaga",
         "trackname": "Lifelike"
+      },
+      {
+        "artist": "Benny Benassi Feat. Kelis",
+        "trackname": "Spaceship (Kris Menace Dub Mix)"
       },
       {
         "artist": "Cassette Club",
@@ -1302,6 +1314,14 @@
     "pubDate": "2010-07-08T10:51:55+00:00",
     "tracklist": [
       {
+        "artist": "Yuksek feat. Amanda Blank",
+        "trackname": "Extraball"
+      },
+      {
+        "artist": "Uffie",
+        "trackname": "MCs Can Kiss"
+      },
+      {
         "artist": "Entyce feat. Hazel",
         "trackname": "In Da Club (Fukkk Offf remix)"
       },
@@ -1354,16 +1374,28 @@
     "pubDate": "2010-07-13T14:00:52+00:00",
     "tracklist": [
       {
+        "artist": "Hail Social",
+        "trackname": "Heaven (Anoraak Remix)"
+      },
+      {
+        "artist": "Friday Bridge",
+        "trackname": "It girl (Nicolas Makelberge remix)"
+      },
+      {
         "artist": "Matias Aguayo",
         "trackname": "Minimal (DJ Koze Remix)"
       },
       {
-        "artist": "Patrick Alavi",
-        "trackname": "To Be (Laidback Luke Remix"
+        "artist": "Unknown Artist",
+        "trackname": "To Be (Laidback Luke Remix)"
       },
       {
         "artist": "Pony Pony Run Run",
         "trackname": "Walking on a line (poka Subliminal mix)"
+      },
+      {
+        "artist": "Nicolas Makelberge",
+        "trackname": "So Young"
       },
       {
         "artist": "NigthWaves",
@@ -1372,6 +1404,10 @@
       {
         "artist": "Kirstenana",
         "trackname": "Love Love Love (Bit Funk Remix)"
+      },
+      {
+        "artist": "Ben Mono feat. Jemeni",
+        "trackname": "Jesus Was A B-Boy (Moullinex Remix)"
       }
     ]
   },
@@ -1490,12 +1526,20 @@
     "pubDate": "2010-08-16T09:08:52+00:00",
     "tracklist": [
       {
+        "artist": "Shakedown",
+        "trackname": "At Night (Afterlife mix)"
+      },
+      {
         "artist": "Tennishero",
         "trackname": "Midnight Love"
       },
       {
         "artist": "Yeasayer",
         "trackname": "O.N.E (Tits & Clits Remix)"
+      },
+      {
+        "artist": "J Dilla",
+        "trackname": "Dreamy (Brabe Cover)"
       },
       {
         "artist": "Bibio",
@@ -1570,6 +1614,10 @@
         "trackname": "Meu Coracaò (Lebooca Project Remix)"
       },
       {
+        "artist": "Edwin Van Cleef",
+        "trackname": "Overtaken (Mille Remix)"
+      },
+      {
         "artist": "Dominik Eulberg",
         "trackname": "Daten Übertragungs Küsschen (Max Cooper Mix)"
       },
@@ -1600,6 +1648,10 @@
       {
         "artist": "Le Principle",
         "trackname": "You Can't Fake It (Original Mix)"
+      },
+      {
+        "artist": "",
+        "trackname": "BOMBER (Club Mix)"
       },
       {
         "artist": "Louis La Roche",
@@ -1752,6 +1804,10 @@
       {
         "artist": "Jimmy Edgar",
         "trackname": "Tell it To The Heart"
+      },
+      {
+        "artist": "Ellen Allien & Apparat",
+        "trackname": "Do Not Break"
       }
     ]
   },
@@ -1806,6 +1862,10 @@
         "trackname": "Mo Underground People"
       },
       {
+        "artist": "Romanthony",
+        "trackname": "Curious (Treasure Fingers remix)"
+      },
+      {
         "artist": "Armand Van Helden",
         "trackname": "The Funk Phenomena"
       },
@@ -1821,6 +1881,10 @@
     "creator": "kazes",
     "pubDate": "2010-12-20T11:15:31+00:00",
     "tracklist": [
+      {
+        "artist": "Mario Basanov",
+        "trackname": "Do you remember (Arithmatix! remix)"
+      },
       {
         "artist": "Mtume",
         "trackname": "Juicy Fruit"
@@ -1856,6 +1920,10 @@
       {
         "artist": "Pendulum",
         "trackname": "The Island (Madeon Remix)"
+      },
+      {
+        "artist": "Skrillex",
+        "trackname": "Rock 'N Roll (Will Take You To The Mountain)"
       },
       {
         "artist": "Futurecop!",
@@ -2082,6 +2150,10 @@
         "trackname": "So Good (Rico Tubbs Remix)"
       },
       {
+        "artist": "SBTRKT Feat. Little Dragon & Drake",
+        "trackname": "Wildfire (Remix)"
+      },
+      {
         "artist": "DJ Jacks Green Feat. Sol",
         "trackname": "This Shit"
       },
@@ -2108,6 +2180,10 @@
       {
         "artist": "Gypsy & The Cat",
         "trackname": "Jona Vark (Alan Braxe Remix)"
+      },
+      {
+        "artist": "Pelle G",
+        "trackname": "Childish Delight (Eumig & Chinon Remix)"
       }
     ]
   },
@@ -2136,6 +2212,10 @@
       {
         "artist": "Chris Malinchak",
         "trackname": "Another Day"
+      },
+      {
+        "artist": "Futurecop!",
+        "trackname": "Tonight's Hero feat. Kat Dawson & Keith Master"
       }
     ]
   },
@@ -2146,8 +2226,16 @@
     "pubDate": "2011-07-18T12:07:56+00:00",
     "tracklist": [
       {
+        "artist": "International Pony",
+        "trackname": "Our House (mama version)"
+      },
+      {
         "artist": "Rocko Schamoni",
         "trackname": "Discoteer (DJ Koze Remix)"
+      },
+      {
+        "artist": "Jürgen Paape",
+        "trackname": "So Weit Wie Noch Nie"
       },
       {
         "artist": "Metro Area",
@@ -2160,6 +2248,10 @@
       {
         "artist": "Nicholas",
         "trackname": "Goldelectric"
+      },
+      {
+        "artist": "Bob Sinclar",
+        "trackname": "Mo Underground People"
       },
       {
         "artist": "Sodex",
@@ -2212,6 +2304,10 @@
       {
         "artist": "Discodeine feat. Matias Aguayo",
         "trackname": "Singular"
+      },
+      {
+        "artist": "Billy Ocean",
+        "trackname": "European Queen (Rayko Edit)"
       },
       {
         "artist": "Alvin Baxter",
@@ -2432,6 +2528,10 @@
       {
         "artist": "L'Equipe du Son",
         "trackname": "Lesson 1 (Rayko Remix)"
+      },
+      {
+        "artist": "Oliver",
+        "trackname": "Walk With Me"
       },
       {
         "artist": "Satin Jackets",
@@ -2771,7 +2871,7 @@
       },
       {
         "artist": "Dragonette",
-        "trackname": "Let it Go  (The Knocks Remix)"
+        "trackname": "Let it Go (The Knocks Remix)"
       }
     ]
   },
@@ -2944,6 +3044,10 @@
       {
         "artist": "Kris Menace Presents Stars On 33",
         "trackname": "Something You Can Feel (Reverso 68 Remix)"
+      },
+      {
+        "artist": "Tabi Bonney",
+        "trackname": "Nuthin But a Hero"
       },
       {
         "artist": "Air Zaïre",
@@ -3355,7 +3459,6 @@
       }
     ]
   },
-
   {
     "title": "Tranche épaisse",
     "number": "098",
