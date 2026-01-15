@@ -7,8 +7,6 @@ const imageModules = import.meta.glob("/public/images/*{jpg,jpeg,png,gif}", {
   as: "url",
 });
 
-console.log("imageModules:", imageModules);
-
 const Posts = () => {
   // Create a map of posts numbers to images URLs
   const imageMap = useMemo(() => {
@@ -24,72 +22,76 @@ const Posts = () => {
   }, []);
   const [audioErrors, setAudioErrors] = useState<Set<number>>(new Set());
 
+  const sanitizeFilename = (filename: string) => {
+    // Remove Windows-forbidden characters: ? < > : " | \ / *
+    return filename.replace(/[?<>:"|\\/*]/g, "");
+  };
+
   const handleAudioError = (index: number) => {
     setAudioErrors((prev) => new Set(prev).add(index));
   };
 
   return (
     <div>
-      {postsData.map((post, index) => (
-        <article
-          key={index}
-          style={{ marginBottom: "2rem", padding: "1rem", border: "1px solid #ddd" }}
-        >
-          <h3>
-            {post.number} - {post.title}
-          </h3>
-          <p>
-            <strong>Mixed by:</strong> {post.creator}
-          </p>
-          <p>
-            <strong>Published:</strong> {new Date(post.pubDate).toLocaleDateString()}
-          </p>
-
-          {imageMap[post.number] && (
-            <img
-              src={imageMap[post.number]}
-              alt={post.title}
-              style={{ maxWidth: "300px", height: "auto" }}
-              loading="lazy"
-            />
-          )}
-
-          {!audioErrors.has(index) ? (
-            <audio
-              controls
-              style={{ width: "100%", marginTop: "1rem" }}
-              onError={() => handleAudioError(index)}
-            >
-              <source
-                src={`/audio/Micromix%20${post.number}%20-%20${encodeURIComponent(post.title)}.mp3`}
-                type="audio/mpeg"
-              />
-              Your browser does not support the audio element.
-            </audio>
-          ) : (
-            <p style={{ marginTop: "1rem", color: "#666", fontStyle: "italic" }}>
-              Audio file not available
+      {postsData.map((post, postIndex) => {
+        const audioName = sanitizeFilename(`Micromix ${post.number} - ${post.title}`);
+        const audioPath = `/audio/${audioName}.mp3`;
+        return (
+          <article
+            key={postIndex}
+            style={{ marginBottom: "2rem", padding: "1rem", border: "1px solid #ddd" }}
+          >
+            <h3>
+              {post.number} - {post.title}
+            </h3>
+            <p>
+              <strong>Mixed by:</strong> {post.creator}
             </p>
-          )}
+            <p>
+              <strong>Published:</strong> {new Date(post.pubDate).toLocaleDateString()}
+            </p>
 
-          {post.tracklist && post.tracklist.length > 0 && (
-            <details style={{ marginTop: "1rem" }}>
-              <summary>Tracklist ({post.tracklist.length} tracks)</summary>
-              <ol>
-                {post.tracklist.map((track, i) => (
-                  <li key={i}>
-                    {typeof track === "string" ? track : `${track.artist} - ${track.trackname}`}
-                  </li>
-                ))}
-              </ol>
-            </details>
-          )}
+            {imageMap[post.number] && (
+              <img
+                src={imageMap[post.number]}
+                alt={post.title}
+                style={{ maxWidth: "300px", height: "auto" }}
+                loading="lazy"
+              />
+            )}
 
-          <a href={post.link} target="_blank" rel="noopener noreferrer">
-            View original post →
-          </a>
-        </article>
-      ))}
+            {!audioErrors.has(postIndex) ? (
+              <audio
+                controls
+                style={{ width: "100%", marginTop: "1rem" }}
+                onError={() => handleAudioError(postIndex)}
+              >
+                <source src={audioPath} type="audio/mpeg" />
+                Your browser does not support the audio element.
+              </audio>
+            ) : (
+              <p style={{ marginTop: "1rem", color: "#666", fontStyle: "italic" }}>
+                Audio file not available
+                <br />
+                {audioName}
+              </p>
+            )}
+
+            {post.tracklist && post.tracklist.length > 0 && (
+              <details style={{ marginTop: "1rem" }}>
+                <summary>Tracklist ({post.tracklist.length} tracks)</summary>
+                <ol>
+                  {post.tracklist.map((track, i) => (
+                    <li key={i}>
+                      {typeof track === "string" ? track : `${track.artist} - ${track.trackname}`}
+                    </li>
+                  ))}
+                </ol>
+              </details>
+            )}
+          </article>
+        );
+      })}
     </div>
   );
 };
